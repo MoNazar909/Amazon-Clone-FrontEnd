@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+/* selects all elements in webpage */
+*{
+    /* padding is the property and 0 is the value assigned to it */
+    /* padding is part of the element and is the spacing inside the border */
+    padding: 0; 
+    /* margin is outside the border and is the spacing between elements */
+    margin: 0;
+    /* box-sizing defines the box-model used to calculate widths and heights of elements */
+    /* border-box model: specified width and height includes the content, padding, and border */
+    box-sizing: border-box;
+    /* adding the imported font */
+    font-family: Outfit;
+}
+
+body{
+
+    /* encompases all background properties like background-color, background-image */
+    background: #dadada;
+}
+
+/* CSS properties for anchor text */
+/* anchor text is the clickable text in a hyperlink */
+a{
+    /* removes underline from links */
+    text-decoration: none;
+
+    /* inherit text color from parent element, rather than using the default blue for unvisited link and purple for visited ones */
+    color: inherit;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #131921;
+    padding: 10px 20px;
+    color: #fff
+}
