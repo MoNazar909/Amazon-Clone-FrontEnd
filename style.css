@@ -31,10 +31,37 @@ a{
 }
 
 nav{
+    /* turns nav bar into a flex container allowing its children elements to be flex items */
+    /* flex container uses flexbox model that makes alligning easily by providing properties like align-item and justify-content */
     display: flex;
+
+    /* verticaly aligns items */
     align-items: center;
+
+    /* space between the items is maximized, pushing the first item to the start edge of the container and the last item to the end edge, while evenly distributing the remaining space between them */
     justify-content: space-between;
     background: #131921;
+
+    /* First value is for top and bottom. Second Value is for left and right */
     padding: 10px 20px;
+
+    /* text color */
     color: #fff
+}
+
+/* nav-country has class attribute so have to use '.' before name */
+.nav-country{
+
+    /* flex container vertically aligns item so it is vertically aligning the img and div elements in html file */
+    display: flex;
+    align-items: end;
+    margin-left: 15px;
+    font-size: 13px;
+    color: #c4c4c4;
+}
+
+/* h1 is a regular element so no '.' behind it. refers to h1 element inside .nav-country class */
+.nav-country h1{
+    color: #fff;
+    font-size: 14px;
 }
