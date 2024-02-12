@@ -23,7 +23,7 @@ body{
 /* CSS properties for anchor text */
 /* anchor text is the clickable text in a hyperlink */
 a{
-    /* removes underline from links */
+    /* removes underline from links for all links because a tag is inside body tag*/
     text-decoration: none;
 
     /* inherit text color from parent element, rather than using the default blue for unvisited link and purple for visited ones */
@@ -204,3 +204,29 @@ nav{
     margin-right: 20px;
     justify-content: center;
 } */
+
+.box-row{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+.box-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    background: #fff;
+    max-width: 24%;
+    min-height: 200px;
+    z-index: 1;
+}
+.box-col a{
+    font-size: 13px;
+    color: #009999;
+    font-weight: 500;
+}
+.header-box{
+    margin-top: -20vw;
+}
