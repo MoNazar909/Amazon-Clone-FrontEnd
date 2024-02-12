@@ -151,3 +151,43 @@ nav{
     gap: 5px;
     font-weight: 600;
 }
+
+.header-slider ul{
+    /* aligns all the images horizontaly */
+    display: flex;
+    /* hides the bottom nav bar form the view and you can only see it when you scroll to bottom of page */
+    overflow-y: hidden;
+}
+
+.header-img{
+    /* sets max width of the image to the browser width */
+    max-width: 100%;
+    /* adds gradient on images */
+    /* black color can be any color, it defines that gradient should start from solid color. 50% means that gradient starts from halfway point of image */
+    mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+}
+.header-slider a{
+
+    /* means the anchor elements are positioned absolutely to their parent block which is the header-slider block */
+    position: absolute;
+
+    /* positions the anchor elements 20% from the top of their containing block */
+    top: 20%;
+
+    /* sets the stacking order of the anchor elements. Elements with higher z-index values appear in front of elements with lower values. */
+    /* the images dont have a z-index so a z-index of 1 on anchors make them appear above the images */
+    z-index: 1;
+
+    /* vh stands for viewport height, and vw stands for viewport width. These units are relative to the size of the viewport. */
+    /* using viewport because it is relative where as setting px is absolute. So the controler box will size according to the browser */
+    padding: 5vh 1vw;
+    background: #ffffff4f;
+    color: #0000007b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+.control_next{
+    right: 0;
+}
