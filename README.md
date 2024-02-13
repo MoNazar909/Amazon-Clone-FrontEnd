@@ -3,6 +3,9 @@
 ## Project Overview
 This project is a front-end clone of the Amazon website, designed to replicate the look and feel of the original site. It features a dynamic user interface with interactive elements such as a header image slider and horizontal product scrolling, closely mimicking Amazon's user experience.
 
+![Amazon Clone Front-End Web Project Screenshot](assets/Amazon%20Clone%20Front-End%20Web%20Project%20SS.png "Project Screenshot")
+
+
 ## Key Features
 
 ### Navigation Bar
